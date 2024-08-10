@@ -1,0 +1,19 @@
+.Benefit-Section-Parent {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+
+.Splendid-Benefit-Sect {
+  width: 12rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+  padding: 1rem;
+}

@@ -1,0 +1,74 @@
+.Header-Parent-div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0rem;
+  position: sticky;
+  top: 0.2rem;
+}
+
+header {
+  display: flex;
+  width: 98%;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.8rem 0rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 12px 24px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  border-radius: 1rem;
+}
+.Header-Logo {
+  cursor: pointer;
+}
+.Header-Navbar {
+  display: flex;
+  gap: 2rem;
+}
+.Header-Navbar button {
+  padding: 1rem;
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.Cart-Btn {
+  background-color: transparent;
+  padding: 0.5rem;
+  border: none;
+  cursor: pointer;
+}
+.Hamburger-Btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+.Hamburger-Btn svg {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 480px) {
+  .Header-Navbar {
+    display: none;
+  }
+  .Cart-Btn {
+    display: none;
+  }
+  .Hamburger-Btn {
+    display: flex;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .Header-Navbar {
+    display: none;
+  }
+  .Cart-Btn {
+    display: none;
+  }
+  .Hamburger-Btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+  }
+}

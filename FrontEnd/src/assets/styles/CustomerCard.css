@@ -1,0 +1,24 @@
+.Customer-Cards {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  padding-bottom: 5rem;
+}
+.Customer-Card {
+  background-image: url(../Images/bg.png);
+  background-size: cover;
+  background-position: center;
+  width: 20rem;
+  height: auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 12px 24px rgba(0, 0, 0, 0.2);
+  border-radius: 1.5rem;
+}

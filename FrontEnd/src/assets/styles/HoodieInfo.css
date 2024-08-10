@@ -1,0 +1,23 @@
+.Hoodie-Info-Bg {
+  width: 100%;
+  background-image: url(../Images/BgMarble.png);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0rem;
+
+  gap: 1rem;
+}
+.Hoodie-Info-Bg-h1 {
+  color: white;
+}
+.Hoodie-Info-Bg-h3 {
+  color: white;
+}
+.Hoodie-Info-Image {
+  min-width: 20rem;
+  max-width: 50rem;
+}

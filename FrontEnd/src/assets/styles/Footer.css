@@ -1,0 +1,27 @@
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+  margin-bottom: 1rem;
+}
+
+footer section {
+  display: flex;
+  width: 98%;
+  border-radius: 1.5;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #2b2b2b;
+  border-radius: 1.5rem;
+  padding: 3rem;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+footer section ul {
+  color: white;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
