@@ -17,8 +17,8 @@
   padding-bottom: 2rem;
 }
 .New-Prod-Bg {
-  max-width: 25rem;
-  min-width: 20rem;
+  max-width: 20rem;
+  min-width: 15rem;
   background-image: url(../Images/bg.png);
   background-position: center;
   display: flex;
