@@ -16,10 +16,10 @@ export const HeaderSect = () => {
           style={{ height: "2.5rem" }}
         />
         <nav className="Header-Navbar">
-          <button>New Arrivals</button>
+          <button>Home</button>
           <button>Products</button>
-          <button>Blogs</button>
-          <button>Contact</button>
+          <button>Reviews</button>
+          <button>About</button>
         </nav>
 
         <button className="Cart-Btn">
