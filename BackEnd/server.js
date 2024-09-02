@@ -1,15 +1,19 @@
-import express from "express";
-import dotenv from "dotenv";
+import express from "express"; // Default import
 
-dotenv.config();
+import pool from "./db.js"; // Default import for the pool
 
 const app = express();
-const port = process.env.PORT;
 
-app.get("/", (req, res) => {
-  res.send("Hello, World!");
+app.get("/api/data", async (req, res) => {
+  try {
+    const result = await pool.query("SELECT * FROM your_table_name");
+    res.json(result.rows);
+  } catch (err) {
+    console.error("Error executing query", err);
+    res.status(500).json({ error: "Internal Server Error" });
+  }
 });
 
-app.listen(port, () => {
-  console.log(`Server is running on http://localhost:${port}`);
+app.listen(3000, () => {
+  console.log("Server is running on port 3000");
 });
