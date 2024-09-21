@@ -4,7 +4,7 @@ import HomeSplendidH1 from "../Images/Greeting.png";
 
 export const HomeSect = () => {
   return (
-    <div className="Home-Section">
+    <div id="Home-Section" className="Home-Section">
       <div className="Home-Section-Img">
         <div className="Home-Greeting">
           <div className="Home-Greeting-H1">

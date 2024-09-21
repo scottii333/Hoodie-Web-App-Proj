@@ -2,7 +2,7 @@ import "../styles/NewArrival.css";
 import { NewProdCard } from "../Components/NewProdCard";
 export const NewArrival = () => {
   return (
-    <section className="NewArrival-Section">
+    <section id="NewArrival-Section" className="NewArrival-Section">
       <h2 style={{ fontSize: "3rem", marginTop: "5rem", marginBottom: "5rem" }}>
         New Arrivals
       </h2>
