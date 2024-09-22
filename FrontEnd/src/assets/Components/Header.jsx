@@ -4,6 +4,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import "../styles/Header.css";
+import { useState } from "react";
+import { CartPopUp } from "./CartPopUp";
 
 export const HeaderSect = () => {
   const scrollToSection = (id) => {
@@ -11,6 +13,12 @@ export const HeaderSect = () => {
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
     }
+  };
+
+  const [isCartOpen, setIsCartOpen] = useState(false);
+
+  const toggleCart = () => {
+    setIsCartOpen(!isCartOpen);
   };
 
   return (
@@ -52,9 +60,13 @@ export const HeaderSect = () => {
           >
             <button>Contact</button>
           </Link>
+
+          {/* <Link to="/Hoodie-Web-App-Proj/Admin">
+            <button>Admin</button>
+          </Link> */}
         </nav>
 
-        <button className="Cart-Btn">
+        <button className="Cart-Btn" onClick={toggleCart}>
           <img
             src={cart}
             alt="Cart"
@@ -65,6 +77,8 @@ export const HeaderSect = () => {
           <FontAwesomeIcon icon={faBars} />
         </button>
       </header>
+
+      <CartPopUp isOpen={isCartOpen} onClose={toggleCart} />
     </div>
   );
 };

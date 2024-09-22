@@ -7,6 +7,13 @@ import { NewArrival } from "./assets/Pages/NewArrival.jsx";
 import { HoodieInfoSect } from "./assets/Components/HoodieInfo.jsx";
 import { CustomerSect } from "./assets/Pages/CustomerPage.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { AdminApp } from "./Admin/AdminApp.jsx";
+import { AdminDashSection } from "./Admin/Pages/AdminDashSection.jsx";
+import { AdminMessagesSection } from "./Admin/Pages/AdminMessagesSection.jsx";
+import { AdminOrderSection } from "./Admin/Pages/AdminOrderSection.jsx";
+import { AdminProductSection } from "./Admin/Pages/AdminProductSection.jsx";
+import { AdminShippingSection } from "./Admin/Pages/AdminShippingSection.jsx";
+import { Navigate } from "react-router-dom";
 import "./assets/styles/App.css";
 
 const router = createBrowserRouter([
@@ -70,6 +77,36 @@ const router = createBrowserRouter([
         <FooterSect />
       </main>
     ),
+  },
+  {
+    path: "/Hoodie-Web-App-Proj/Admin",
+    element: <AdminApp />,
+    children: [
+      {
+        path: "",
+        element: <Navigate to="Dashboard" />,
+      },
+      {
+        path: "Dashboard",
+        element: <AdminDashSection />,
+      },
+      {
+        path: "Products",
+        element: <AdminProductSection />,
+      },
+      {
+        path: "Orders",
+        element: <AdminOrderSection />,
+      },
+      {
+        path: "Shipping",
+        element: <AdminShippingSection />,
+      },
+      {
+        path: "Messages",
+        element: <AdminMessagesSection />,
+      },
+    ],
   },
 ]);
 

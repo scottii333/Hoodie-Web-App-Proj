@@ -14,6 +14,10 @@ app.get("/api/data", async (req, res) => {
   }
 });
 
+app.get("/Hoodie-Web-App-Proj/", (req, res) => {
+  res.send("Welcome to the API!");
+});
+
 app.listen(3000, () => {
   console.log("Server is running on port 3000");
 });
